@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Family | Official Website</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7f5;
+    color: #26352d;
+    line-height: 1.7;
+}
+
+/* Navigation */
+
+nav {
+    background: #12372a;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #d4b477;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 450px;
+    background: linear-gradient(135deg, #12372a, #436850);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.hero button {
+    margin-top: 25px;
+    padding: 13px 30px;
+    border: none;
+    background: #dbc59c;
+    color: #12372a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Common Sections */
+
+section {
+    padding: 65px 9%;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    color: #12372a;
+    margin-bottom: 35px;
+}
+
+/* About */
+
+.about {
+    background: white;
+    padding: 35px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+/* Brothers */
+
+.brother-container {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #00000015;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #648050;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Business */
+
+.business {
+    background: #e8efe9;
+    text-align: center;
+    border-radius: 12px;
+    padding: 45px;
+}
+
+/* Footer */
+
+footer {
+    background: #12372a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Responsive */
+
+@media(max-width: 650px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+    <div class="logo">OUR FAMILY</div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#brothers">Brothers</a>
+        <a href="#business">Business</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+
+<header class="hero" id="home">
+    <div>
+        <h1>Welcome to Our Family</h1>
+
+        <p>
+            A Family of Love, Unity,
+            Respect and Success.
+        </p>
+
+        <button onclick="location.href='#brothers'">
+            Explore Our Family
+        </button>
+    </div>
+</header>
+
+<!-- About -->
+
+<section id="about">
+
+    <h2 class="title">About Our Family</h2>
+
+    <div class="about">
+
+        <p>
+            We are a close-knit family of five brothers,
+            built on love, honesty, respect and strong
+            family values.
+
+            Our family is actively involved in business,
+            particularly wholesale trading and
+            international commercial activities.
+
+            Some of our family members live abroad
+            and manage their business activities
+            in different countries.
+
+            We believe in hard work, dedication,
+            unity and supporting one another.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Five Brothers -->
+
+<section id="brothers">
+
+    <h2 class="title">Meet Our Five Brothers</h2>
+
+    <div class="brother-container">
+
+        <!-- Brother 1 -->
+
+        <div class="card">
+
+            <img src="images/brother-1.jpeg"
+              alt="Brother 1">
+
+            <div class="card-content">
+
+                <h3>Md.Didar</h3>
+
+                <p>Profession: Businessman</p>
+
+                <p>Business: Wholesale Trading</p>
+
+                <p>Country: MOZAMBIQUE</p>           
+
+            </div>
+        </div>
+
+        <!-- Brother 2 -->
+
+        <div class="card">
+
+            <img src="images/brother-2.jpeg"
+            alt="Brother 2">
+                
+
+            <div class="card-content">
+
+                <h3>Md.Azgar</h3>
+
+                <p>Profession: Businessman</p>
+
+                <p>Business: Wholesale Trading</p>
+
+                <p>Country: MOZAMBIQUE</p>
+
+            </div>
+        </div>
+
+        <!-- Brother 3 -->
+
+        <div class="card">
+
+            <img src="images/brother-3.jpeg"
+            alt="Brother 3">
+
+            <div class="card-content">
+
+                <h3>Md.Arfat</h3>
+
+                <p>Profession: Businessman</p>
+
+                <p>Business: Wholesale Trading</p>
+
+                <p>Country: MOZAMBIQUE</p>
+
+            </div>
+        </div>
+
+        <!-- Brother 4 -->
+
+        <div class="card">
+
+            <img src="images/brother-4.jpeg"
+            alt="Brother 4">
+
+            <div class="card-content">
+
+                <h3>MD.Mostakim</h3>
+
+                <p>Profession:students</p>
+
+                <p>Country: Bangladesh</p>
+
+            </div>
+        </div>
+
+        <!-- Brother 5 -->
+
+        <div class="card">
+
+            <img src="images/brother-5.jpeg"
+            alt="Brother 5">
+
+            <div class="card-content">
+
+                <h3>Reazaul Karim</h3>
+
+                <p>Profession: students</p>
+
+                <p>Country: Bangladesh</p>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Business -->
+
+<section id="business">
+
+    <div class="business">
+
+        <h2 class="title">Our Family Business</h2>
+
+        <p>
+            Our family has a strong connection
+            with the business sector.
+
+            We are involved in wholesale trading
+            and international business activities.
+
+            Our business philosophy is based on
+            honesty, quality, trust and customer
+            satisfaction.
+
+            We believe that hard work and
+            dedication are the keys to success.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <h2>OUR FAMILY</h2>
+
+    <p>
+        United by Love, Strengthened by Unity.
+    </p>
+
+    <p>
+        © 2026 Our Family. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
